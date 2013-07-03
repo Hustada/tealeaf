@@ -5,19 +5,24 @@ puts "What is the second number?"
 num2 = gets.chomp
 
 puts "What would you like to do? 1)Add 2)Subtract 3)Multiply 4)Divide"
-arr = ['1','2','3','4'] 
-result = gets.chomp
+operation = gets.chomp
 
+if operation == '1'
+puts "Answer is"
+puts num1.to_f + num2.to_f
+end
 
+if operation == '2'
+puts "Answer is"
+puts num1.to_f - num2.to_f
+end
 
-if operation = arr[0]
-  result == num1.to_s + num2.to_s
-elsif operation = arr[1]
-  result == num1.to_s - num2.to_s
-elsif operation = arr[2]
-  result == num1.to_s * num2.to_s
-else operation = arr[4]
-  result == num1.to_i / num2.to_i
-end   
+if operation == '3'
+puts "Answer is"
+puts num1.to_f * num2.to_f
+end
 
-puts 'Answer is ' + result + ''     
+if operation == '4'
+puts "Answer is" 
+puts num1.to_f / num2.to_f
+end
